@@ -82,8 +82,8 @@ pipeline {
                               pip install -r /var/jenkins_home/ndfc/ansible/requirements.txt
                               source ndfc_setup
                               ansible --version
-                              cd /var/jenkins_home/ndfc/collections/ansible_collections/playbooks
-                              ansible-playbook -i ndfc_inventory.yml ndfc_tests.yml -vvvv
+                              # cd /var/jenkins_home/ndfc/collections/ansible_collections/playbooks
+                              # ansible-playbook -i ndfc_inventory.yml ndfc_tests.yml -vvvv
                           '''
                     }
                 }
